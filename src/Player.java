@@ -1,12 +1,13 @@
 import java.util.HashMap;
 
 public class Player {
-    HashMap<String, String> inventory = new HashMap<String, String>();
+    HashMap<Integer, String> inventory = new HashMap<Integer, String>();
     String username;
-
+    int i = 1;
     //add item to location hashmap
-    public void addItem(String location, String item) {
-        inventory.put(location, item);
+    public void addItem(String item) {
+        inventory.put(i, item);
+        i++;
     }
 
     //remove item from location hashmap
